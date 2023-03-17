@@ -168,7 +168,7 @@ button {
 
 .sedans {
     background-color: var(--primaryclr-Bright-orange);
-
+    border-radius: 15px 0 0 15px;
 }
 
 .sedans button{
@@ -182,6 +182,7 @@ button {
 
 .suvs {
     background-color: var(--primaryclr-Dark-cyan);
+    
 
 }
 
@@ -194,7 +195,7 @@ button {
 
 .luxury {
     background-color: var(--primaryclr-Very-dark-cyan);
-
+    border-radius: 0 15px 15px 0;
 }
 
 .luxury button{
