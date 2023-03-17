@@ -1,0 +1,234 @@
+:root{
+    --primaryclr-Bright-orange: hsl(31, 77%, 52%);
+    --primaryclr-Dark-cyan: hsl(184, 100%, 22%);
+    --primaryclr-Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* (paragraphs) */
+    --neutralclr-Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --neutralclr-Very-light-gray: hsl(0, 0%, 95%);
+
+    --ff-base: 'Lexend Deca', sans-serif;
+    --ff-accent: 'Big Shoulders Display', cursive;
+
+    --fw-regular-base: 400;
+    --fw-bold-accent: 700;
+
+    /*  Font size: 15px 
+        Mobile: 375px
+        Desktop: 1440px
+    */
+}
+
+/* css reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* min-height: 100vh; */
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+  /*     --primaryclr-Bright-orange: hsl(31, 77%, 52%);
+    --primaryclr-Dark-cyan: hsl(184, 100%, 22%);
+    --primaryclr-Very-dark-cyan: hsl(179, 100%, 13%);
+
+    (paragraphs) 
+    --neutralclr-Transparent-white: hsla(0, 0%, 100%, 0.75);
+     (background, headings, buttons) 
+    --neutralclr-Very-light-gray: hsl(0, 0%, 95%);
+
+    --ff-base: 'Lexend Deca', sans-serif;
+    --ff-accent: 'Big Shoulders Display', cursive;
+
+    --fw-regular-base: 400;
+    --fw-bold-accent: 700;
+
+      Font size: 15px 
+        Mobile: 375px
+        Desktop: 1440px
+     */
+
+/* main section */
+
+.main {
+    background-color: var(--neutralclr-Very-light-gray);
+    padding: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.car {
+    background-color: var(--neutralclr-Very-light-gray);
+    color: var(--neutralclr-Transparent-white);
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    gap: 50px;
+    word-spacing: 4px;
+    
+}
+
+.car header {
+    /* margin-bottom: 20px; */
+    
+}
+
+.car header img {
+    margin-bottom: 40px;
+    
+}
+
+.car header h1 {
+    margin-top: 30px;
+    /* border: 1px solid black; */
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-bold-accent);
+    text-transform: uppercase;
+    color: var(--neutralclr-Very-light-gray);
+    line-height: 2.5px;
+    font-size: 30px;
+}
+
+.car p {
+    /* margin-bottom: 20px; */
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular-base);
+    color: var(--neutralclr-Transparent-white);
+    font-size: 16px;
+    /* border: 1px solid black; */
+}
+
+
+button {
+    /* margin-top: 50px; */
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--neutralclr-Very-light-gray);
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular-base);
+    border: none;
+ 
+}
+
+
+/* sedan */
+
+.sedans {
+    background-color: var(--primaryclr-Bright-orange);
+
+}
+
+.sedans button{
+    color: var(--primaryclr-Bright-orange);
+
+}
+
+
+
+/* suvs */
+
+.suvs {
+    background-color: var(--primaryclr-Dark-cyan);
+
+}
+
+.suvs button{
+    color: var(--primaryclr-Dark-cyan);
+
+}
+
+/* luxury */
+
+.luxury {
+    background-color: var(--primaryclr-Very-dark-cyan);
+
+}
+
+.luxury button{
+    color: var(--primaryclr-Very-dark-cyan);
+
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 500px) {
+    .main {
+        background-color: var(--neutralclr-Very-light-gray);
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        min-width: 70vh;
+        
+    }
+
+    .car {
+
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 50px;
+        word-spacing: 4px;
+        min-width: 100%;
+        
+    }
+}
