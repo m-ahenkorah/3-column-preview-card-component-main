@@ -176,6 +176,20 @@ button {
 
 }
 
+.sedans button:hover {
+  cursor: pointer;
+  background-color: var(--primaryclr-Bright-orange);
+  border: 3px solid var(--neutralclr-Transparent-white);
+  color: var(--neutralclr-Transparent-white);
+}
+
+.sedans button:focus {
+  cursor: pointer;
+  background-color: var(--primaryclr-Bright-orange);
+  border: 3px solid var(--neutralclr-Transparent-white);
+  color: var(--neutralclr-Transparent-white);
+}
+
 
 
 /* suvs */
@@ -191,6 +205,21 @@ button {
 
 }
 
+.suvs button:hover {
+  cursor: pointer;
+  background-color: var(--primaryclr-Dark-cyan);
+  border: 3px solid var(--neutralclr-Transparent-white);
+  color: var(--neutralclr-Transparent-white);
+}
+
+.suvs button:focus {
+  cursor: pointer;
+  background-color: var(--primaryclr-Dark-cyan);
+  border: 3px solid var(--neutralclr-Transparent-white);
+  color: var(--neutralclr-Transparent-white);
+}
+
+
 /* luxury */
 
 .luxury {
@@ -202,6 +231,21 @@ button {
     color: var(--primaryclr-Very-dark-cyan);
 
 }
+
+.luxury button:hover {
+  cursor: pointer;
+  background-color: var(--primaryclr-Very-dark-cyan);
+  border: 3px solid var(--neutralclr-Transparent-white);
+  color: var(--neutralclr-Transparent-white);
+}
+
+.luxury button:focus {
+  cursor: pointer;
+  background-color: var(--primaryclr-Very-dark-cyan;
+  border: 3px solid var(--neutralclr-Transparent-white);
+  color: var(--neutralclr-Transparent-white);
+}
+
 
 .attribution { 
     font-size: 11px; 
